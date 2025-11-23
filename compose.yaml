@@ -9,7 +9,7 @@ services:
       dockerfile: Dockerfile.python
     restart: always
     environment:
-      DB_HOST: db
+      DB_HOST: 172.20.0.10
       DB_USER: ${MYSQL_USER}  
       DB_PASSWORD: ${MYSQL_PASSWORD}
       DB_NAME: ${MYSQL_DATABASE}
