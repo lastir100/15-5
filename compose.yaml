@@ -4,7 +4,10 @@ include:
 services:
 
   web:
-    image: cr.yandex/crp2e1gb23jlmfuht9nt/test
+    image: webapp
+    build:
+      context: .
+      dockerfile: Dockerfile.python
     restart: always
     environment:
       DB_HOST: db
