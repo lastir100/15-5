@@ -4,8 +4,7 @@ include:
 services:
 
   web:
-    image: webapp
-    build:
+     build:
       context: .
       dockerfile: Dockerfile.python
     restart: always
